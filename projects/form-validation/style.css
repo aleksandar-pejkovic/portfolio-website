@@ -1,0 +1,16 @@
+form {
+    margin: 30%;
+    margin-top: 2%;
+    margin-bottom: 0%;
+    overflow: hidden;
+}
+
+.form-text {
+    line-height: 1;
+}
+
+@media screen and (max-width: 800px) {
+    form {
+        margin: 10%;
+    }
+}

@@ -1,0 +1,113 @@
+body {
+    background: url('img/background/shapes.jpg');
+    background-size: 100%;
+}
+
+.projects {
+    margin-top: 50px;
+    text-align: center;
+    color: #f27326;
+}
+
+.project {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    height: 80vh;
+    background-color: whitesmoke;
+    color: #3e0e9e;
+    border: 1px outset #3e0e9e;
+    border-radius: 30px;
+    margin: 20px;
+}
+
+.img-holder {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    bottom: 0%;
+}
+
+.img-holder button {
+    height: 40px;
+    width: 50px;
+    border-radius: 10px;
+    opacity: 0.7;
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 45%;
+    font-weight: bold;
+}
+
+.img-holder button:hover {
+    border: 1px outset black;
+}
+
+.img-holder .leftBtn {
+    left: 20%;
+}
+
+.img-holder .rightBtn {
+    right: 20%;
+}
+
+.img {
+    width: auto;
+    height: 40vh;
+    display: none;
+    margin: 20px;
+    border-radius: 20px;
+    transition: all 1s ease-in-out;
+    z-index: 1;
+}
+
+.show {
+    display: block;
+}
+
+.img:hover {
+    transform: scale(2);
+}
+
+@media screen and (max-width: 990px) {
+
+    .projects {
+        margin-top: 0px;
+    }
+
+    .project {
+        margin: 5px;
+    }
+
+
+    .img-holder {
+        background: transparent;
+    }
+
+    .img-holder button {
+        background: transparent;
+        color: black;
+    }
+
+    .img-holder .leftBtn {
+        left: 0%;
+    }
+
+    .img-holder .rightBtn {
+        right: 0%;
+    }
+
+    .img {
+        width: 70%;
+        height: auto;
+    }
+
+    .img:hover {
+        transform: scale(1.5);
+    }
+}

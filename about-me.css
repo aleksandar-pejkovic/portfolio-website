@@ -1,0 +1,122 @@
+body {
+    background: url('img/background/shapes.jpg');
+
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1,
+h3,
+h5 {
+    background-color: whitesmoke;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.bio {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bio>* {
+    color: #3e0e9e;
+    text-align: center;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.article {
+    display: flex;
+    width: 100vw;
+    background-color: white;
+    color: #3e0e9e;
+    border-radius: 20px;
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+
+.img-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.img-container h6 {
+    color: #3e0e9e;
+}
+
+.bio .article>* {
+    width: 50%;
+}
+
+.bio .image {
+    margin-right: 10px;
+    width: 200px;
+    transition: all 500ms ease;
+    border-radius: 20px;
+}
+
+.bio .image:hover {
+    transform: scale(2);
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+}
+
+.bio a {
+    text-decoration: none;
+    color: black;
+}
+
+.bio a:hover {
+    color: black;
+}
+
+#cv-link {
+    text-decoration: none;
+    color: magenta;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+
+    .bio {
+        margin-top: 0px;
+    }
+
+    .bio .image {
+        width: 100%;
+        height: auto;
+    }
+
+    .bio .image:hover {
+        transform: scale(1);
+    }
+
+    .bio .article {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .bio .article * {
+        padding: 5px;
+        margin: 0%;
+        width: 100%;
+    }
+
+    .img-container {
+        flex-direction: column;
+    }
+}

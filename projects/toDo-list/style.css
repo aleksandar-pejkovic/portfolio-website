@@ -1,0 +1,12 @@
+.container{
+    margin-top: 10vh;
+}
+
+.task-container{
+    display: flex;
+    align-items: center;
+}
+
+.task-container li{
+    width: 100%;
+}

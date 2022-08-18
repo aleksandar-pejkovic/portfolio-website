@@ -1,0 +1,19 @@
+.input-holder {
+    margin-top: 10vh;
+}
+
+.container {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+button {
+    width: 100%;
+}
+
+#array {
+    height: 150px;
+    border: 1px solid;
+    margin: 5px;
+    padding: 20px;
+}
