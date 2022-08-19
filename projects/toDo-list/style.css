@@ -1,12 +1,28 @@
-.container{
+.container {
     margin-top: 10vh;
 }
 
-.task-container{
+.task-container {
     display: flex;
     align-items: center;
 }
 
-.task-container li{
+.task-container li {
     width: 100%;
+}
+
+.instructions {
+    background-color: rgb(219, 219, 219);
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+
+    .instructions {
+        display: none;
+    }
 }

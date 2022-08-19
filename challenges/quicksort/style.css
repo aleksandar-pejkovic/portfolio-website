@@ -2,6 +2,15 @@
     margin-top: 10vh;
 }
 
+.instructions {
+    background-color: rgb(219, 219, 219);
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
 .container {
     padding-left: 20%;
     padding-right: 20%;
@@ -18,10 +27,21 @@ button {
     padding: 20px;
 }
 
-.unvisible{
+.unvisible {
     opacity: 0;
 }
 
 .visible {
     opacity: 1;
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .instructions {
+        display: none;
+    }
 }
