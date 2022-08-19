@@ -2,9 +2,11 @@ let addBtn = document.querySelector('.add-btn')
 let resetBtn = document.querySelector('.reset-btn')
 let input = document.querySelector('.input-number')
 let arrayText = document.querySelector('#array')
+let sortedArrayText = document.querySelector('#sortedArray')
 let arrayStr = []
 let arrayNum = []
 let quicksortBtn = document.querySelector('.quicksort-btn')
+let sorted = false
 
 input.addEventListener("keypress", event => {
 
@@ -37,6 +39,12 @@ input.addEventListener("keyup", event => {
 })
 
 addBtn.addEventListener('click', () => {
+
+    if (sorted) {
+        arrayText.textContent = ''
+        sorted = false
+    }
+
     let inputValue = input.value
     if (inputValue < 1000000) {
         arrayText.textContent += inputValue + ' '
@@ -53,15 +61,27 @@ addBtn.addEventListener('click', () => {
 resetBtn.addEventListener('click', () => {
     arrayText.textContent = ''
     arrayStr = []
+    sortedArrayText.classList.remove('visible')
+    input.focus()
 })
 
 quicksortBtn.addEventListener('click', () => {
+    if (arrayStr.length === 0) {
+        alert('Insert numbers!')
+        return
+    }
+    sortedArrayText.textContent = ''
+    arrayNum = []
     arrayStr.forEach(str => {
         arrayNum.push(Number(str))
     })
     console.log(arrayNum)
-    quicksort(array, 0, array.length - 1)
+    quicksort(arrayNum, 0, arrayNum.length - 1)
     console.log(arrayNum)
+    sortedArrayText.textContent = arrayNum.toString()
+    sortedArrayText.classList.add('visible')
+    arrayStr = []
+    sorted = true
 })
 
 function quicksort(array, lowIndex, highIndex) {
