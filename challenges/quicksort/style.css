@@ -11,9 +11,17 @@ button {
     width: 100%;
 }
 
-#array {
+.array {
     height: 150px;
     border: 1px solid;
     margin: 5px;
     padding: 20px;
+}
+
+.unvisible{
+    opacity: 0;
+}
+
+.visible {
+    opacity: 1;
 }
