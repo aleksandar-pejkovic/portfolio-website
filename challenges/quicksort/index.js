@@ -40,12 +40,18 @@ input.addEventListener("keyup", event => {
 
 addBtn.addEventListener('click', () => {
 
+    if (input.value.length < 1) {
+        alert("Number field can't be empty!")
+        return
+    }
+
     if (sorted) {
         arrayText.textContent = ''
         sorted = false
     }
 
     let inputValue = input.value
+
     if (inputValue < 1000000) {
         arrayText.textContent += inputValue + ' '
         arrayStr.push(inputValue)
