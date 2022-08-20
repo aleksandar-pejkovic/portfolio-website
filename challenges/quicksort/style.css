@@ -25,6 +25,11 @@ button {
     border: 1px solid;
     margin: 5px;
     padding: 20px;
+    overflow: auto;
+}
+
+#sortedArray{
+   
 }
 
 .unvisible {

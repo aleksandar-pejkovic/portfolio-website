@@ -52,14 +52,17 @@ addBtn.addEventListener('click', () => {
 
     let inputValue = input.value
 
-    if (inputValue < 1000000) {
-        arrayText.textContent += inputValue + ' '
+    if (inputValue < 1000000000000) {
+        if (arrayStr.length < 1) {
+            arrayText.textContent += inputValue
+        } else {
+            arrayText.textContent += ", " + inputValue
+        }
         arrayStr.push(inputValue)
         input.value = ''
-        array.push
         input.focus()
     } else {
-        alert("Number must be smaller than 1.000.000")
+        alert("Number must be smaller than 1.000.000.000.000")
         input.value = ''
     }
 })
@@ -84,7 +87,13 @@ quicksortBtn.addEventListener('click', () => {
     console.log(arrayNum)
     quicksort(arrayNum, 0, arrayNum.length - 1)
     console.log(arrayNum)
-    sortedArrayText.textContent = arrayNum.toString()
+    arrayNum.forEach(num => {
+        if (sortedArrayText.textContent.length < 1) {
+            sortedArrayText.textContent += num
+        } else {
+            sortedArrayText.textContent += ", " + num
+        }
+    })
     sortedArrayText.classList.add('visible')
     arrayStr = []
     sorted = true
