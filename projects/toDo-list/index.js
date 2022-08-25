@@ -1,38 +1,43 @@
 let input = document.querySelector('#newTaskText')
-input.addEventListener("keypress", function(event) {
-   
-    if (event.key === "Enter") {
-      
-      event.preventDefault();
-      
-      document.getElementById("submitBtn").click();
-    }
-  });
+input.addEventListener("keypress", function (event) {
+
+  if (event.key === "Enter") {
+
+    event.preventDefault();
+
+    document.getElementById("submitBtn").click();
+  }
+});
 
 
 function addTask() {
 
-    let unorderedList = document.querySelector('#taskList')
+  let unorderedList = document.querySelector('#taskList')
 
-    let newTaskText = document.querySelector('#newTaskText').value
+  let newTaskText = document.querySelector('#newTaskText').value
 
-    let containerDiv = document.createElement('div')
-    containerDiv.classList.add('task-container')
+  if (newTaskText === '') {
+    alert('Write something!')
+    return
+  }
 
-    let listItem = document.createElement('li')
-    listItem.classList.add('list-group-item')
-    listItem.innerText = newTaskText
+  let containerDiv = document.createElement('div')
+  containerDiv.classList.add('task-container')
 
-    let button = document.createElement('button')
-    button.setAttribute("type", "button")
-    button.setAttribute("class", "btn-close btn-close-black")
-    button.setAttribute("aria-label", "Close")
-    button.setAttribute("onclick", "removeTask(this)")
+  let listItem = document.createElement('li')
+  listItem.classList.add('list-group-item')
+  listItem.innerText = newTaskText
 
-    containerDiv.appendChild(listItem)
-    containerDiv.appendChild(button)
-    unorderedList.appendChild(containerDiv)
-    document.querySelector('#newTaskText').value = ''
+  let button = document.createElement('button')
+  button.setAttribute("type", "button")
+  button.setAttribute("class", "btn-close btn-close-black")
+  button.setAttribute("aria-label", "Close")
+  button.setAttribute("onclick", "removeTask(this)")
+
+  containerDiv.appendChild(listItem)
+  containerDiv.appendChild(button)
+  unorderedList.appendChild(containerDiv)
+  document.querySelector('#newTaskText').value = ''
 
 }
 

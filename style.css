@@ -151,6 +151,15 @@ body {
     text-decoration: none;
 }
 
+.explainer {
+    background-color: rgb(219, 219, 219);
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
 @media screen and (max-width: 800px) {
 
     .nav-wrap {

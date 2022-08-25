@@ -2,6 +2,15 @@
     margin-top: 10vh;
 }
 
+.instructions {
+    background-color: rgb(219, 219, 219);
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
 .container {
     padding-left: 20%;
     padding-right: 20%;
@@ -11,9 +20,29 @@ button {
     width: 100%;
 }
 
-#array {
+.array {
     height: 150px;
     border: 1px solid;
     margin: 5px;
     padding: 20px;
+    overflow: auto;
+}
+
+.unvisible {
+    opacity: 0;
+}
+
+.visible {
+    opacity: 1;
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .instructions {
+        display: none;
+    }
 }

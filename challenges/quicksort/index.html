@@ -43,6 +43,9 @@
     <br>
 
     <div class="container input-holder">
+        <div class="instructions">
+            Use ENTER to add, DEL to reset and SPACEBAR to quicksort
+        </div>
         <div class="input-group mb-3">
             <span class="input-group-text" id="inputGroup-sizing-default">Enter number</span>
             <input type="number" class="form-control input-number" aria-describedby="inputGroup-sizing-default"
@@ -53,25 +56,40 @@
 
     <div class="container">
 
-        <h4 id="array">
+        <div id="array" class="array">
 
-        </h4>
+        </div>
         <button type="button" class="btn btn-primary reset-btn">Reset</button>
     </div>
+
     <br>
+
     <div class="container">
         <button type="button" class="btn btn-primary quicksort-btn">Quicksort</button>
     </div>
 
+    <br>
 
+    <div class="container">
 
+        <div id="sortedArray" class="array unvisible">
 
+        </div>
 
+    </div>
+
+    <div class="explainer">
+        <p>
+            Here is a <a href="https://github.com/pejko89/Quicksort-Java/blob/master/Quicksort/src/Main.java" target="_blank">link</a> to original code written in Java. <br>
+            Alghorythm is re-written in JavaScript just to demonstrate it's functionality here.
+        </p>
+    </div>
 
 
 
 
     <script src="index.js"></script>
+    <script src="../../script.js"></script>
 </body>
 
 </html>

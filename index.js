@@ -128,6 +128,7 @@ window.onscroll = () => {
 
 
     imageAnimation()
+    navColorChange()
 
 }
 
@@ -150,5 +151,20 @@ const imageAnimation = () => {
     if (sectionPosition > screenPosition) {
         leftImage.classList.remove('animated')
         rightImage.classList.remove('animated')
+    }
+}
+
+const navColorChange = () => {
+    let sectionForAnimation = document.querySelector('#external-links') 
+    let openbtn = document.querySelector('.openbtn')
+    let sectionPosition = sectionForAnimation.getBoundingClientRect().top
+    let screenPosition = window.innerHeight
+
+    if (sectionPosition < screenPosition) {
+        openbtn.style.color = 'black'
+    }
+
+    if (sectionPosition > screenPosition) {
+        openbtn.style.color = 'white'
     }
 }

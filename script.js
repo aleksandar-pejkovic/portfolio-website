@@ -17,3 +17,13 @@ closebtn.addEventListener('click', () => {
     main.style.display = "block"
 })
 
+window.addEventListener('resize', () => {
+    if (window.innerWidth < 800) {
+        main.style.display = "block"
+    } else {
+        main.style.display = "none"
+        if (sidebar.style.width = "250px") {
+            sidebar.style.width = "0"
+        }
+    }
+});

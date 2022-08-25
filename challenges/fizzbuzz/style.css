@@ -1,0 +1,76 @@
+.input-holder {
+    margin-top: 10vh;
+}
+
+.instructions {
+    background-color: rgb(219, 219, 219);
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+    transition: all 750ms ease-in-out;
+}
+
+.disapear{
+    transform: translateY(-150px);
+    opacity: 0;
+}
+
+.moveUp{
+    transform: translateY(-330px);
+}
+
+.container {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.btn {
+    width: 15%;
+    float: right;
+    margin-left: 20px;
+}
+
+.unvisible {
+    opacity: 0;
+}
+
+.visible {
+    opacity: 1;
+}
+
+span {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+}
+
+.printingDiv{
+    border: 2px outset maroon;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    transition: all 1s ease-in;
+}
+
+.printingDiv h5 {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 990px) {
+    .container {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .instructions {
+        display: none;
+    }
+    .moveUp{
+        transform: translateY(0px);
+    }
+}
