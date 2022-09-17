@@ -1,0 +1,46 @@
+.back{
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.galleries {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.gallery {
+    background-size: cover;
+    width: 30%;
+    height: 50vh;
+    margin: 20px;
+}
+
+.gallery1 {
+    background-image: url("../../img/projects/bookingAPI/booking1.jpg");
+}
+
+.gallery2 {
+    background-image: url("../../img/projects/bookingAPI/sql1.jpg");
+}
+
+.gallery3 {
+    background-image: url("../../img/projects/bookingAPI/postman1.jpg");
+}
+
+h1{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    .galleries{
+        flex-direction: column;
+    }
+    .gallery {
+        width: 90vw;
+        height: 50vh;
+        margin: 20px;
+    }
+}
