@@ -158,8 +158,7 @@
 }
 
 .projects a:hover .project {
-    background-color: #fdfdfd;
-    border-color: magenta;
+    border-color: black;
 }
 
 .hide {
@@ -170,7 +169,7 @@
     transform: translate(-50%, -50%);
     transition: all 700ms ease;
     padding: 20px;
-    background-color: magenta;
+    background-color: black;
     color: white;
     font-weight: bold;
     border-radius: 50px;
