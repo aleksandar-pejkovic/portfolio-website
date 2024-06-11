@@ -1,6 +1,5 @@
 body {
-    background: url('img/background/shapes.jpg');
-
+    /* background: url('img/background/shapes.jpg'); */
     height: 100%;
 
     /* Create the parallax scrolling effect */
@@ -37,12 +36,15 @@ h5 {
 
 .article {
     display: flex;
-    width: 100vw;
-    background-color: white;
+    width: 80vw;
+    background-color: whitesmoke;
     color: #3e0e9e;
-    border-radius: 20px;
+    border-radius: 15px;
     padding-top: 30px;
     margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 50px;
 }
 
 .img-container {
